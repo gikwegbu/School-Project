@@ -18,17 +18,7 @@
           <router-link to="/new">Start One </router-link>
          </h3>
       </div>
-      <!-- This is the section for Recent-card -->
-
-      
-
-
-      
-
-
-      
-
-
+      <!-- This is the section for Recent-card --> 
     <button @click="p()"> lol</button>
       
     </div> 
@@ -61,10 +51,7 @@ export default {
     return{ 
     }
   },
-  methods: {
-    p: function(){
-      window.print()
-    }
+  methods: { 
   }
 };
 </script>

@@ -25,7 +25,7 @@
     }), 
     methods: {
         ToastDisplay: function(display){
-            this.snackbar = display
+          this.snackbar = display
         }
     }
   }
