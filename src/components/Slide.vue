@@ -7,7 +7,7 @@
       reverse-transition="fade-transition"
       transition="fade-transition"
     ></v-carousel-item> -->
-    <v-carousel-item  src="../assets/img/slide/1.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+    <v-carousel-item src="../assets/img/slide/1.jpg" height="3000px" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
     <v-carousel-item src="../assets/img/slide/2.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
     <v-carousel-item src="../assets/img/slide/3.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
     <v-carousel-item src="../assets/img/slide/4.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>

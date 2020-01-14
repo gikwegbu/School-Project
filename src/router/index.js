@@ -34,7 +34,7 @@ const routes = [
   },
   {
     path: '/template',
-    name: 'template',
+    name: 'temp',
     meta: { layout: 'Dashboard' },
     component: Template
   },

@@ -1,7 +1,7 @@
 <template>
     <div>
         <v-card class="mx-auto" max-width="97%" >
-            <v-img class="white--text align-end" height="200px" src="../assets/img/Recent/loneliness.jpg" >
+            <v-img class="white--text align-end" height="auto" src="../assets/img/Recent/loneliness.jpg" >
             <v-card-title>Factors Leading to Divorce In Nigeria</v-card-title>
             </v-img>
 
@@ -21,7 +21,7 @@
         </v-card>
 
          <v-card class="mx-auto" max-width="97%" >
-            <v-img class="white--text align-end" height="200px" src="../assets/img/Recent/kwashiokor.jpeg" >
+            <v-img class="white--text align-end" height="auto" src="../assets/img/Recent/kwashiokor.jpeg" >
             <v-card-title>Top 10 Causes of kwashiokor in Children</v-card-title>
             </v-img>
 
@@ -41,7 +41,7 @@
         </v-card>
 
         <v-card class="mx-auto" max-width="97%" >
-            <v-img class="white--text align-end" height="200px" src="../assets/img/Recent/marriage.jpg" >
+            <v-img class="white--text align-end" height="auto" src="../assets/img/Recent/marriage.jpg" >
             <v-card-title>Origin of Traditional marriages</v-card-title>
             </v-img>
 
@@ -61,7 +61,7 @@
         </v-card>
 
          <v-card class="mx-auto" max-width="97%" >
-            <v-img class="white--text align-end" height="200px" src="../assets/img/Recent/model.jpg" >
+            <v-img class="white--text align-end" height="auto" src="../assets/img/Recent/model.jpg" >
             <v-card-title>Tips on how to be a perfect Model</v-card-title>
             </v-img>
 

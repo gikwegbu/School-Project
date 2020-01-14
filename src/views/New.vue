@@ -184,7 +184,7 @@
               </v-card>
             </v-dialog>
           </v-row>
-          <v-btn color="teal ml-2"  dark rounded>Export</v-btn>  
+          <v-btn @click="exportCSV" color="teal ml-2"  dark rounded>Export</v-btn>  
         </v-card-actions> 
         <br><br><br>  
     </div>
@@ -289,16 +289,41 @@ export default {
       
     },
     newRespondent: function(){ 
-      const _ = this;
-      console.log(_.newData.answer.length)
+      const _ = this; 
       let { answer  } = _.newData;
       let A = {};
       for(let i = 0; i < _.newData.answer.length; i++){ 
         A[`Q${i + 1}`] = answer[i]   
       }
       _.exportData.push(A);
-      _.newData.answer = []
-       console.log(_.exportData)
+      _.newData.answer = [] 
+    },
+    exportCSV: function(){
+      const _ = this;
+      let csvString = "";
+      for(let i = 1; i <= _.questionSize; i++){
+        csvString = `${csvString}Q${i},`;
+      }
+      csvString += `\n`;
+      for(let i = 0; i < _.exportData.length; i++){
+        let res = _.exportData[i]; 
+        for(let j = 1; j <= _.questionSize; j++){
+          csvString += res['Q' + j ] + ',';
+        }
+        csvString += `\n`
+      } 
+      var blob = new Blob([csvString], {type: "application/csv"});
+      window.URL = window.URL || window.webkitURL;
+      const link = window.URL.createObjectURL(blob);
+      let a = document.createElement("a"); 
+      a.download = _.formatQuestion.topic+'.csv';
+      a.href = link;
+
+      document.body.appendChild(a);
+
+      a.click();
+
+      document.body.removeChild(a);
     }
   }
 };
